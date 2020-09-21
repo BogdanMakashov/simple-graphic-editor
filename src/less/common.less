@@ -1,0 +1,106 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+
+    font-size: 16px;
+
+    line-height: 24px;
+}
+
+body {
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+input {
+    height: 42px;
+}
+
+/* Canvas wrapper */
+.canvas-wrapper {
+    display: inline-block;
+    position: relative;
+}
+
+/* / Canvas wrapper */
+
+/* Colors flower */
+
+.colors-flower {
+    display: inline-block;
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 20px;
+    height: 20px;
+
+    transform: translate(-50%, -50%);
+}
+
+.colors-flower__button {
+    display: inline-block;
+    position: absolute;
+
+    margin: 0;
+    padding: 0;
+
+    width: 20px;
+    height: 20px;
+
+    border: 2px solid #bbbbbb;
+    border-radius: 50%;
+    outline: none;
+
+    transform: translate(-50%, -50%);
+
+    &:first-child {
+        top: -50%;
+        left: 50%;
+
+        background-color: #f0a500;
+    }
+
+    &:nth-child(2) {
+        top: 10%;
+        left: -50%;
+
+        background-color: #ec0101;
+    }
+
+    &:nth-child(3) {
+        top: 10%;
+        left: 150%;
+
+        background-color: #4e89ae;
+    }
+
+    &:nth-child(4) {
+        top: 120%;
+        left: -40%;
+
+        background-color: #81b214;
+    }
+
+    &:nth-child(5) {
+        top: 120%;
+        left: 140%;
+
+        background-color: #ffaa71;
+    }
+}
+
+/* / Colors flower */
+
+/* Canvas */
+.canvas {
+    border: 2px solid #000000;
+}
+
+/* / Canvas */

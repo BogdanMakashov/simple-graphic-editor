@@ -1,0 +1,26 @@
+<% locals.setLayout('./src/layouts/base.ejs') -%>
+<% locals.block('title', 'Графический редактор') -%>
+
+
+<div class="canvas-wrapper">
+    <!-- Color Selector -->
+    <div class="colors-flower">
+        <button data-color="#f0a500" class="colors-flower__button"></button>
+        <button data-color="#ec0101" class="colors-flower__button"></button>
+        <button data-color="#4e89ae" class="colors-flower__button"></button>
+        <button data-color="#81b214" class="colors-flower__button"></button>
+        <button data-color="#ffaa71" class="colors-flower__button"></button>
+    </div>
+    <!-- / Color Selector -->
+
+    <!-- Canvas -->
+    <canvas id="canvas" width="500" height="500" class="canvas"></canvas>
+    <!-- / Canvas -->
+
+    <!-- Connected dots setting -->
+    <div class="input-wrapper">
+        <label for="connected-dots-count">Количество соединяемых точек</label>
+        <input type="number" id="connected-dots-count" min="2" max="5" value="2" class="connected-dots-count">
+    </div>
+    <!-- / Connected dots setting -->
+</div>
